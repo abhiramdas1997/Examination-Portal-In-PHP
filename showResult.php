@@ -2,7 +2,8 @@
 <?php
   session_start();
   if(!isset($_SESSION['user_id'])){
-  	header("Location: index.php");
+    header("Location: index.php");
+    //modified
   }
   if(!isset($_SESSION['test_id'])){
     header("Location: studentHome.php");
